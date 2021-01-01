@@ -2,19 +2,19 @@ import bcrypt from 'bcryptjs'
 
 const users = [
   {
-    name: 'Admin User',
-    email: 'admin@example.com',
+    name: 'Admin Stanley',
+    email: 'stanley.dike21@gmail.com',
     password: bcrypt.hashSync('123456', 10),
     isAdmin: true,
   },
   {
-    name: 'John Doe',
-    email: 'john@example.com',
+    name: 'Chief Keef',
+    email: 'ChiefKeef@gmail.com',
     password: bcrypt.hashSync('123456', 10),
   },
   {
-    name: 'Jane Doe',
-    email: 'jane@example.com',
+    name: 'Kevin Durant',
+    email: 'easymoneysniper@gmail.com',
     password: bcrypt.hashSync('123456', 10),
   },
 ]

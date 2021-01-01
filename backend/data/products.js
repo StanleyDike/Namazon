@@ -33,7 +33,7 @@ const products = [
     price: 599.99,
     countInStock: 7,
     rating: 4.0,
-    numReviews: 8,
+    numReviews: 17,
   },
   {
     name: 'Sony Playstation 4 Pro White Version',
