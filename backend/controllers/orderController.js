@@ -3,7 +3,7 @@ import Order from '../models/orderModel.js'
 
 // @desc    Create new order
 // @route   POST /api/orders
-// @access  PRIVATE
+// @access  Private
 const addOrderItems = asyncHandler(async (req, res) => {
   const {
     orderItems,
@@ -17,7 +17,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
 
   if (orderItems && orderItems.length === 0) {
     res.status(400)
-    throw new Error('No order Items')
+    throw new Error('No order items')
     return
   } else {
     const order = new Order({
@@ -31,7 +31,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
       totalPrice,
     })
 
-    const createdOrder = await Order.save()
+    const createdOrder = await order.save()
 
     res.status(201).json(createdOrder)
   }
