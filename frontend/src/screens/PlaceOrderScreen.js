@@ -11,11 +11,11 @@ const PlaceOrderScreen = ({ history }) => {
 
   const cart = useSelector((state) => state.cart)
 
+  // Calculate Prices
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2)
   }
 
-  // Calculate Prices
   cart.itemsPrice = addDecimals(
     cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   )
@@ -59,7 +59,7 @@ const PlaceOrderScreen = ({ history }) => {
         <Col md={8}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
-              <h2>Shiping</h2>
+              <h2>Shipping</h2>
               <p>
                 <strong>Address: </strong>
                 {cart.shippingAddress.address}, {cart.shippingAddress.city},{' '}
@@ -87,8 +87,8 @@ const PlaceOrderScreen = ({ history }) => {
                           <Image
                             src={item.image}
                             alt={item.name}
-                            rounded
                             fluid
+                            rounded
                           />
                         </Col>
                         <Col>

@@ -105,7 +105,6 @@ export const myOrderListReducer = (state = { orders: [] }, action) => {
       return {
         orders: [],
       }
-
     default:
       return state
   }
