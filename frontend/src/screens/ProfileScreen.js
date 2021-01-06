@@ -25,6 +25,7 @@ const ProfileScreen = ({ location, history }) => {
   const userUpdateProfile = useSelector((state) => state.userUpdateProfile)
   const { success } = userUpdateProfile
 
+  //Gets all the orders from a specififc user
   const myOrderList = useSelector((state) => state.myOrderList)
   const { loading: loadingOrders, error: errorOrders, orders } = myOrderList
 
