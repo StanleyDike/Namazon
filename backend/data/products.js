@@ -8,7 +8,7 @@ const products = [
     category: 'Video games & console',
     price: 499.99,
     countInStock: 0,
-    rating: 4.5,
+    rating: 5.0,
     numReviews: 15,
   },
   {
@@ -20,7 +20,7 @@ const products = [
     category: 'Video games & console',
     price: 499.99,
     countInStock: 0,
-    rating: 4.0,
+    rating: 4.5,
     numReviews: 13,
   },
   {
@@ -44,7 +44,7 @@ const products = [
     category: 'Cell phones & accessories',
     price: 1099.99,
     countInStock: 50,
-    rating: 4.5,
+    rating: 4.3,
     numReviews: 11,
   },
   {
@@ -56,7 +56,7 @@ const products = [
     category: 'Cell phones & accessories',
     price: 89.99,
     countInStock: 50,
-    rating: 4.5,
+    rating: 4.2,
     numReviews: 12,
   },
   {
@@ -68,7 +68,7 @@ const products = [
     category: 'Video games & console',
     price: 399.99,
     countInStock: 50,
-    rating: 5,
+    rating: 4.0,
     numReviews: 12,
   },
   {
